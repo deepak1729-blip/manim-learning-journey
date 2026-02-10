@@ -1,1 +1,8 @@
+from manim import *
 
+class check(Scene):
+    def construct(self):
+        text = Text("HELLO").shift(UP)
+        text2 = Tex("WORLD").shift(DOWN)
+        self.play(Write(text),Write(text2))
+        self.wait(3)
